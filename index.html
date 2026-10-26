@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,27 +10,36 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f4f1ec;
-      color: #222;
+      background: #111116;
+      color: #f2f2f2;
       line-height: 1.6;
     }
 
     header {
-      background: #171717;
-      color: white;
+      background: #1c1b27;
       text-align: center;
       padding: 45px 20px;
+      border-bottom: 2px solid #8b5cf6;
     }
 
     header h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
+      font-size: 36px;
+      margin-bottom: 8px;
+      color: #c4b5fd;
+    }
+
+    nav {
+      margin-top: 20px;
     }
 
     nav a {
       color: white;
-      margin: 0 12px;
       text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #c4b5fd;
     }
 
     main {
@@ -40,33 +50,63 @@
 
     section {
       margin-bottom: 45px;
+      scroll-margin-top: 20px;
     }
 
     h2 {
-      border-bottom: 2px solid #777;
+      color: #c4b5fd;
+      border-bottom: 1px solid #49415f;
       padding-bottom: 8px;
     }
 
     .artwork {
-      background: white;
+      background: #1c1b27;
       padding: 20px;
       margin: 25px 0;
-      border-radius: 10px;
+      border-radius: 12px;
+      border: 1px solid #353142;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .artwork:hover {
+      transform: translateY(-4px);
+      border-color: #8b5cf6;
     }
 
     .artwork img {
       width: 100%;
       max-height: 450px;
       object-fit: contain;
-      background: #e5e5e5;
+      background: #292633;
       display: block;
+      border-radius: 8px;
+    }
+
+    .artwork h3 {
+      color: #ddd0ff;
     }
 
     footer {
-      background: #171717;
-      color: white;
+      background: #1c1b27;
+      color: #bdb8cc;
       text-align: center;
       padding: 20px;
+      border-top: 1px solid #49415f;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 28px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+
+      main {
+        padding: 16px;
+      }
     }
   </style>
 </head>
@@ -89,45 +129,37 @@
 
     <section id="artworks">
       <h2>My Artworks</h2>
-      <p>Here are three projects that show my interest in digital art, design, and 3D modeling.</p>
+      <p>These projects show my interest in digital art, design, and 3D modeling.</p>
 
       <div class="artwork">
         <h3>1. Naruto 3D Logo</h3>
-        <img src="https://placehold.co/800x450/e5e5e5/222?text=Add+Your+Naruto+3D+Logo"
+        <img src="https://placehold.co/800x450/292633/ffffff?text=Naruto+3D+Logo"
              alt="Naruto 3D logo artwork">
         <p><strong>Medium:</strong> 3D digital design</p>
-        <p>I created a 3D Naruto logo inspired by anime. I wanted to turn a familiar design into something with depth and a more interesting appearance.</p>
+        <p>I created a 3D Naruto logo inspired by anime. I wanted to give the design more depth and make it visually interesting.</p>
       </div>
 
       <div class="artwork">
         <h3>2. Glitch Art</h3>
-        <img src="https://placehold.co/800x450/e5e5e5/222?text=Add+Your+Glitch+Art"
+        <img src="https://placehold.co/800x450/292633/ffffff?text=Glitch+Art"
              alt="Glitch art project">
         <p><strong>Medium:</strong> Digital image editing</p>
-        <p>My glitch art explores phone use, notifications, and how technology can distract us from real life. I used digital effects to communicate this idea.</p>
+        <p>My glitch art explores phone use, notifications, and how technology can distract us from real life. I used digital effects to express this idea.</p>
       </div>
 
       <div class="artwork">
         <h3>3. Blender 3D Gaming Setup</h3>
-        <img src="https://placehold.co/800x450/e5e5e5/222?text=Add+Your+Blender+Project"
+        <img src="https://placehold.co/800x450/292633/ffffff?text=Blender+3D+Gaming+Setup"
              alt="Blender 3D gaming setup">
         <p><strong>Medium:</strong> Blender 3D modeling</p>
-        <p>I created a 3D gaming setup with a computer, desk, and other details. This project helped me practice building objects and arranging a digital scene.</p>
+        <p>I created a 3D gaming setup with a computer, desk, and other details. This project helped me practice modeling objects and arranging a scene.</p>
       </div>
     </section>
 
     <section id="about">
       <h2>Artist Statement</h2>
-      <p>
-        I am a Digital Media Arts student who enjoys video editing,
-        digital design, and 3D modeling. I like experimenting with effects,
-        colors, and details to make my work more interesting.
-      </p>
-      <p>
-        My projects are inspired by anime, technology, and ideas from everyday
-        life. I want to keep improving my skills and explore motion graphics,
-        animation, and 3D design.
-      </p>
+      <p>I am a Digital Media Arts student who enjoys video editing, digital design, and 3D modeling. I like experimenting with effects, colors, and details to make my work more interesting.</p>
+      <p>My projects are inspired by anime, technology, and everyday life. I want to keep improving my skills and explore motion graphics, animation, and 3D design.</p>
     </section>
 
     <section id="cv">
